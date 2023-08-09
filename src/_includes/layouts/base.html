@@ -6,7 +6,7 @@
   <!-- if js is available add class -->
   <script>document.documentElement.classList.add('has-js');</script>
   <!-- css -->
-  {%- include "css/styles.njk" -%}
+  <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
   <!-- preload scripts and fonts -->
   <!-- named block to inject elements from layout files -->
   {%- block injectHead -%}{%- endblock -%}
