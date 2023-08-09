@@ -1,3 +1,16 @@
 @import "tailwindcss/base";
 
 @import "global/reset.css";
+
+@import "tailwindcss/components";
+
+@import "global/focus.css";
+@import "global/skip-to-main.css";
+@import "global/variables.css";
+@import "global/global-styles.css";
+
+/* @import-glob 'blocks/*.css'; */
+@import-glob 'compositions/*.css';
+@import-glob 'utilities/*.css';
+
+@import "tailwindcss/utilities";

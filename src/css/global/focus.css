@@ -1,0 +1,11 @@
+:focus {
+	outline-style: solid;
+}
+
+:focus:not(:focus-visible) {
+	outline: none;
+}
+
+[tabindex="-1"]:focus {
+	outline: none;
+}
