@@ -15,6 +15,9 @@ module.exports = function (config) {
 	//Watch target
 	config.addWatchTarget("./src/css/");
 
+	//Filters
+	config.addFilter("md", require("./src/filters/md.js"));
+
 	//Transforms
 	config.addTransform("htmlmin", function (content, outputPath) {
 		// Eleventy 1.0+: use this.inputPath and this.outputPath instead
