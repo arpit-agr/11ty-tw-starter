@@ -1,3 +1,5 @@
+{% set assetHash = global.random() %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
   <!-- if js is available add class -->
   <script>document.documentElement.classList.add('has-js');</script>
   <!-- css -->
-  <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
+  <link rel="stylesheet" href="/css/styles.css?{{ assetHash }}" />
   <!-- preload scripts and fonts -->
   <!-- named block to inject elements from layout files -->
   {%- block injectHead -%}{%- endblock -%}
