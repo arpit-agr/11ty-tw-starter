@@ -37,13 +37,13 @@ h3 {
 p,
 li,
 blockquote:not([class]) {
-	max-width: 50ch;
+	max-inline-size: var(--measure-body);
 }
 
 h1,
 h2,
 h3 {
-	max-width: 20ch;
+	max-inline-size: var(--measure-headings);
 }
 
 /* More generic elements */
@@ -60,8 +60,8 @@ blockquote:not([class]) p:last-of-type {
 }
 
 svg {
-	height: 2ex;
-	width: auto;
+	block-size: 2ex;
+	inline-size: auto;
 	flex: none;
 }
 
